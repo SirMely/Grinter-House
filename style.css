@@ -1,0 +1,614 @@
+/* Grinter Friends | Deontae Wills aka Mely */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #555;
+    background-color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo img {
+    height: 90px;
+    width: 90px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links ul li {
+    font-weight: 600;
+}
+
+.nav-links li {
+    font-size: large;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.nav-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-socials i {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-socials i:hover {
+    color: #007bff;
+}
+
+/* Header nav Css */
+
+.header-section {
+    position: relative;
+    background-image: url('/logo imgs/The GP1.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.header-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5f5f5ed;
+    text-align: center;
+}
+/* Note: For some reason it's auto font sizing so I have to seperate them into divs sadly */
+
+.header-h1-txt h1 {
+    font-size: 3rem;
+    color: #f5f5f5ed;
+}
+
+.header-p-txt {
+    font-size: 1.4rem;
+}
+
+/* Who we are section */
+
+#who-are-we {
+    padding: 100px 0px;
+    background-color: #fff;
+}
+
+.waw-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.waw-text {
+    width: 70%;
+    text-align: left;
+}
+
+.waw-text h1 {
+    font-size: 2.5rem;
+}
+
+.waw-text p {
+    font-size: 1.2rem;
+    max-width: 80%;
+    font-weight: 500;
+}
+
+.waw-image {
+    width: 40%;
+}
+
+.waw-image img {
+    height: 400px;
+    width: 450px;
+    border-radius: 10px;
+}
+
+.waw-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.waw-btn p {
+    text-align: center;
+}
+
+.waw-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Features Section */
+
+.features-grid {
+    padding: 80px 0;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+  
+.features-grid h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+  
+.about-features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+}
+  
+.feature-item-grid {
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+  
+.feature-item-grid:hover {
+    background-color: #007bff; 
+}
+
+.feature-item-grid:hover h3, .feature-item-grid:hover p {
+    color: #fff;
+}
+  
+.feature-item-grid h3, .feature-item-grid p {
+    margin-bottom: 20px;
+}
+  
+.feature-icon {
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.3s ease, background-color 0.3s ease; 
+}
+
+.feature-item-grid i {
+    font-size: 40px;
+    color: transparent;
+    transition: color 0.3s ease; 
+}
+
+.feature-item-grid:hover .feature-icon {
+    border-color: #007bff; 
+    background-color: #e0e0e0; 
+}
+
+.feature-item-grid:hover i {
+    color: #007bff; 
+}
+
+.features-grid > .container > a {
+    margin-top: 3rem;
+}
+
+/* History Section with New Content */
+
+.history-preview {
+    padding: 100px 0;
+    background-color: #fff; 
+    text-align: center;
+}
+
+.history-preview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.history-preview p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* Key Events with Images Styling */
+.history-events {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.event-item {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.event-item-3 img {
+    width: 100%; 
+    height: auto; 
+    max-height: 390px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.event-item img {
+    width: 100%;
+    max-height: 390px;
+    min-height: 390px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.event-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.history-preview .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.history-preview .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Rentals Section */
+.rentals-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: #ecf0f1;
+}
+
+.rentals-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Text section */
+.rentals-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.rentals-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.rentals-text p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.rental-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.rental-features li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+    display: flex;
+    align-items: center;
+}
+
+.rental-features li::before {
+    content: '\2022';
+    color: #007bff;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Gallery/Slideshow section */
+.rentals-gallery {
+    flex: 1;
+    position: relative;
+    max-width: 600px;
+    height: 400px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Slideshow controls */
+.slide-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.slide-controls .prev, .slide-controls .next {
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.slide-controls .prev:hover, .slide-controls .next:hover {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-item i {
+    font-size: 2rem;
+    color: #007bff;
+    flex-shrink: 0; 
+}
+
+.info-item h3, .info-item p {
+    margin: 0;
+}
+
+
+.contact-form {
+    flex: 1;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Map styling */
+.contact-map {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-about h3,
+.footer-links h4,
+.footer-social h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+.footer-social .social-icons a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1rem;
+}
