@@ -1,0 +1,330 @@
+/* Grinter Friends | Deontae Wills aka Mely */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    color: #555;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+    font-family: 'Libre Baskerville', serif;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo img {
+    height: 90px;
+    width: 90px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links ul li {
+    font-weight: 600;
+}
+
+.nav-links li {
+    font-size: large;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.nav-socials {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-socials i {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-socials i:hover {
+    color: #007bff;
+}
+
+/* Header Section */
+.header-section {
+    position: relative;
+    background-color: #2c3e50;
+    height: 100vh;
+    z-index: 1;
+}
+
+.header-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f5f5f5ed;
+    text-align: center;
+}
+
+.header-h1-txt {
+    font-size: 2.5rem;
+}
+
+.header-h1-txt h1 {
+    color: #f8f8f8;
+}
+
+.header-p-txt {
+    font-size: 1.4rem;
+}
+
+/* Contact Socials Section */
+
+#social-icons {
+    padding: 80px 0;
+    background-color: #fff;
+    text-align: center;
+}
+/* Socials text sizing */
+.socials-container h1{
+    font-size: 2.5rem;
+}
+
+.socials-container i {
+    font-size: 2rem;
+}
+
+.icons p {
+    font-size: 1.5rem;
+    margin: 0;
+}
+/* Socials Formatting */
+.socials-container {
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.socials i {
+    margin: 0;
+    margin-top: 15px;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+
+.socials i:hover {
+    color: #007bff;
+}
+
+/* Grinter Freinds Section */
+
+#grinter-friends {
+    padding: 100px 0;
+    background-color: #ecf0f1;
+}
+
+.gf-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gf-text {
+    width: 70%;
+    text-align: left;
+}
+
+.gf-text h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.gf-text h4 {
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+
+.gf-text p {
+    font-size: 1.2rem;
+    max-width: 80%;
+    font-weight: 500;
+}
+
+.gf-text a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: blue;
+}
+
+.gf-img img {
+    height: 400px;
+    width: auto;
+}
+
+.gf-img {
+    width: 40%;
+}
+
+/* Grinter House Section */
+
+#grinter-place {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.gp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gp-text {
+    width: 70%;
+    text-align: left;
+}
+
+.gp-text h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.gp-text h4 {
+    font-weight: 400;
+    font-size: 1.05rem;
+}
+
+.gp-text p {
+    font-size: 1.2rem;
+    max-width: 80%;
+    font-weight: 500;
+}
+
+.gp-text a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: blue;
+}
+
+.gp-img img {
+    height: 400px;
+    width: auto;
+}
+
+.gp-img {
+    width: 40%;
+}
+
+/* Footer Section */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 0;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-about h3,
+.footer-links h4,
+.footer-social h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #007bff;
+}
+
+.footer-social .social-icons a {
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1rem;
+}
