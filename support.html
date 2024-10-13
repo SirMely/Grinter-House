@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate to Grinter Place Friends</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Home btn */
+
+        .home-button {
+            position: absolute;
+            top: 15px;
+            left: 50px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .home-button:hover {
+            background-color: #025fc3;
+        }
+
+        .home-button:before {
+            content: '⬅';
+            font-size: 20px;
+            margin-right: 12px;
+            line-height: 1;
+        }
+
+        /* Donation card */
+        .donation-container {
+            position: relative;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 450px;
+            width: 100%;
+            padding: 30px 20px 20px; /* Extra padding to account for image overlap */
+            text-align: center;
+            margin-top: 120px; /* Adjust based on image height */
+        }
+
+        .image-container {
+            position: absolute;
+            top: -120px; /* Moves the image up to overlap */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            overflow: hidden;
+            border-radius: 15px 15px 0 0; /* Rounded corners at the top only */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border-radius: 15px 15px 0 0; /* Ensures the image has the same rounded top corners */
+        }
+
+        .donation-header {
+            padding-top: 100px; /* Adds space below the image */
+        }
+
+        .donation-header h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .donation-header p {
+            color: #777;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .donation-amounts {
+            display: flex;
+            justify-content: space-around;
+            margin: 25px 0;
+            gap: 10px;
+        }
+
+        .donation-amounts button {
+            flex: 1;
+            padding: 12px 0;
+            border-radius: 25px;
+            border: 2px solid #ccc;
+            background-color: #fff;
+            color: #333;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        .donation-amounts button.selected, .donation-amounts button:hover {
+            background-color: #2c3e50;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .donation-buttons button {
+            width: 100%;
+            padding: 15px;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .paypal-btn {
+            background-color: #ffc439;
+            color: #333;
+            border: none;
+        }
+
+        .paypal-btn:hover {
+            background-color: #ffb020;
+        }
+
+        .credit-card-btn {
+            background-color: #fff;
+            border: 1px solid #2c3e50;
+            color: #2c3e50;
+        }
+
+        .credit-card-btn:hover {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+<main>
+
+    <a href="/index.html" class="home-button">Go Back</a>
+
+
+    <div class="donation-container">
+        <div class="image-container">
+            <img src="/logo imgs/Grinter Place.jpg" alt="Grinter Place Friends">
+        </div>
+        <div class="donation-header">
+            <h2>Support Grinter Place Friends</h2>
+            <p>Your donation helps preserve and maintain the historic Grinter Place for future generations. Join us in safeguarding this piece of history!</p>
+        </div>
+
+        <div class="donation-amounts">
+            <button class="selected">$25</button>
+            <button>$50</button>
+            <button>$100</button>
+            <button>Other</button>
+        </div>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="cover-fees">
+            <label for="cover-fees">Add <span>$0.00</span> to cover processing fees.</label>
+        </div>
+
+        <div class="checkbox-container">
+            <input type="checkbox" id="monthly-donation">
+            <label for="monthly-donation">Make this a monthly donation</label>
+        </div>
+
+        <div class="donation-buttons">
+            <button class="paypal-btn">Donate with PayPal</button>
+            <button class="credit-card-btn">Donate with Debit or Credit Card</button>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
